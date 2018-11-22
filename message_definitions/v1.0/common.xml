@@ -167,6 +167,9 @@
       <entry value="32" name="MAV_TYPE_FLARM">
         <description>Onboard FLARM collision avoidance system</description>
       </entry>
+      <entry value="33" name="MAV_TYPE_DAQ_BOARD">
+        <description>Data Acquisition Board</description>
+      </entry>
     </enum>
     <enum name="FIRMWARE_VERSION_TYPE">
       <description>These values define the type of firmware release.  These values indicate the first version or release of this type.  For example the first alpha release would be 64, the second would be 65.</description>
