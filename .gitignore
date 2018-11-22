@@ -23,6 +23,7 @@ pymavlink.egg-info/
 .ropeproject
 *.cproject
 include/
+include.py
 .tags*
 *.pyc
 include/mavlink/v1.0
