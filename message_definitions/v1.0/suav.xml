@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<mavlink>
+  <!-- SUAV message definitions                                      -->
+  <!-- https://github.com/SchulichUAV                                -->
+  <!-- email contacts: schulichuav@gmail.com                         -->
+  <!-- mavlink ID range 12000 - 12999                                -->
+  <messages>
+    <message id="12000" name="WING_SENSOR_VALUES">
+      <description>Values from wing sensors</description>
+      <field type="int16_t" name="sens_1_l">sensor 1 left</field>
+      <field type="int16_t" name="sens_2_l">sensor 2 left</field>
+      <field type="int16_t" name="sens_3_l">sensor 3 left</field>
+      <field type="int16_t" name="sens_4_l">sensor 4 left</field>
+      <field type="int16_t" name="sens_1_r">sensor 1 right</field>
+      <field type="int16_t" name="sens_2_r">sensor 2 right</field>
+      <field type="int16_t" name="sens_3_r">sensor 3 right</field>
+      <field type="int16_t" name="sens_4_r">sensor 4 right</field>
+    </message>
+    <message id="12001" name="THREE_D_AIRSPEED_VALUES">
+      <description>3D airspeed values</description>
+      <field type="int16_t" name="airsp_1">Airspeed 1</field>
+      <field type="int16_t" name="airsp_2">Airspeed 2</field>
+      <field type="int16_t" name="airsp_3">Airspeed 3</field>
+      <field type="int16_t" name="airsp_4">Airspeed 4</field>
+      <field type="int16_t" name="airsp_5">Airspeed 5</field>
+    </message>
+  </messages>
+</mavlink>
