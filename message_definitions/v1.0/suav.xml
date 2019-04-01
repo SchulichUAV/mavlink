@@ -4,6 +4,13 @@
   <!-- https://github.com/SchulichUAV                                -->
   <!-- email contacts: schulichuav@gmail.com                         -->
   <!-- mavlink ID range 12000 - 12999                                -->
+  <enums>
+    <enum name="DROP_TYPE">
+      <entry value="1" name="WATER_DROP"/>
+      <entry value="2" name="HABITAT_DROP"/>
+      <entry value="3" name="GLIDER_DROP"/>
+    </enum>
+  </enums>
   <messages>
     <message id="12000" name="WING_SENSOR_VALUES">
       <description>Values from wing sensors</description>
@@ -23,6 +30,14 @@
       <field type="float" name="airsp_3">Airspeed 3</field>
       <field type="float" name="airsp_4">Airspeed 4</field>
       <field type="float" name="airsp_5">Airspeed 5</field>
+    </message>
+
+    <message id="12002" name="DROP_INFORMATION">
+      <description>Information for water drop</description>
+      <field type="uint8_t" name="type" enum="DROP_TYPE">Drop type.</field>
+      <field type="int32_t" name="lat" units="degE7">Latitude of drop point.</field>
+      <field type="int32_t" name="lng" units="degE7">Longitude of drop point.</field>
+      <field type="int16_t" name="alt" units="m">Drop altitude relative to home.</field>
     </message>
   </messages>
 </mavlink>
