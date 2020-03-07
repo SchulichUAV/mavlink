@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<mavlink>
+  <!-- SUAV message definitions                                      -->
+  <!-- https://github.com/SchulichUAV                                -->
+  <!-- email contacts: schulichuav@gmail.com                         -->
+  <!-- mavlink ID range 12000 - 12999                                -->
+  <messages>
+    <message id="12003" name="DROP_POPUP">
+      <description>Does whatever</description>
+      <field type="float" name="alt">Altitude</field>
+	  <field type="uint8_t" name="type">Object Type</field>
+    </message>
+    <message id="12004" name="REQUEST_ALT">
+      <description>Requests that the plane fly at a given altitude, and send status</description>
+      <field type="uint8_t" name="req_alt">Requested Altitude</field>
+    </message>
+    <message id="12005" name="STATUS_ALT_REQ">
+      <description>Sends current alt and status on completion of request</description>
+      <field type="uint8_t" name="cur_alt">Current Altitude</field>
+      <field type="uint8_t" name="dist_alt">Difference between current alt and requested alt</field>
+    </message>
+  </messages>
+</mavlink>
